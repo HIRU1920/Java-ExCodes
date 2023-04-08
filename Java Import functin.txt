@@ -1,0 +1,35 @@
+1. java.awt: provides classes for creating graphical user interfaces (GUI), such as buttons, menus, and dialogs.
+
+2. java.applet: provides classes for creating applets, which are small Java programs that can be embedded in a web page.
+
+3. java.beans: provides classes for working with JavaBeans, which are reusable software components that can be manipulated visually in a builder tool.
+
+4. java.io: provides classes for working with input and output operations, such as reading from and writing to files and streams.
+
+5. java.lang: provides fundamental classes and interfaces that are automatically imported into every Java program, such as String, Object, and Math.
+
+6. java.math: provides classes for performing advanced mathematical operations, such as BigInteger and BigDecimal.
+
+7. java.net: provides classes for working with network protocols and resources, such as URLs and sockets.
+
+8. java.nio: provides classes for performing non-blocking I/O operations, such as reading and writing data asynchronously.
+
+9. java.rmi: provides classes for creating and working with remote method invocation (RMI), which allows Java objects to communicate across a network.
+
+10. java.security: provides classes and interfaces for implementing security features in Java applications, such as encryption and digital signatures.
+
+11. java.sql: provides classes for working with relational databases, including JDBC drivers for connecting to various database management systems.
+
+12. java.text: provides classes for working with formatted text, such as numbers, dates, and currencies.
+
+13. java.time: provides classes for working with date and time values, including formatting and parsing functionality.
+
+14. java.util: provides the collection framework, which provides a set of classes and interfaces for managing groups of objects, such as ArrayList, LinkedList, and HashMap.
+
+15. javax.crypto: provides classes for performing cryptographic operations, such as encryption and decryption.
+
+16. javax.imageio: provides classes for working with images, such as reading and writing image files in various formats.
+
+17. javax.swing: provides more advanced user interface components and functionality, such as dialog boxes and layout managers.
+
+18. javax.xml: provides classes for working with XML documents and data, such as parsing and generating XML files.
