@@ -1,27 +1,35 @@
-import java.util.Scanner;
+import java.util.*;
+public class QuadraticEquationSolver
+{
 
-public class QuadraticEquationSolver {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the coefficients of the quadratic equation (ax^2 + bx + c = 0):");
-        System.out.print("a: ");
+        System.out.println("Enter the values : ");
+        System.out.print("Enter the value of a := " );
         double a = input.nextDouble();
-        System.out.print("b: ");
+        System.out.print("Enter the value of b := ");
         double b = input.nextDouble();
-        System.out.print("c: ");
+        System.out.print("Enter the value of c := " );
         double c = input.nextDouble();
+        double d = -4 * a * c;
 
-        double discriminant = b * b - 4 * a * c;
-
-        if (discriminant < 0) {
-            System.out.println("The quadratic equation has no real roots.");
-        } else if (discriminant == 0) {
+        {     // determinant > 0 //
+            double root1 = (-b + Math.sqrt(Math.pow(b, 2) + d)) / (2 * a);
+            double root2 = (-b - Math.sqrt(Math.pow(b, 2) + d)) / (2 * a);
+            System.out.println("The Equation has Real Roots: ");
+            System.out.println("First Root  is : " + root1);
+            System.out.println("Secound Root is : " + root2);
+        }
+             // determinant = 0 //
+        if (d == 0)
+        {
             double root = -b / (2 * a);
-            System.out.printf("The quadratic equation has one real root: %.2f\n", root);
-        } else {
-            double root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-            double root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
-            System.out.printf("The quadratic equation has two real roots: %.2f and %.2f\n", root1, root2);
+            System.out.println("The equation has one real root: " + root);
+        }
+        else
+        {
+            System.out.println("The equation has no real roots.");
         }
     }
 }
+
